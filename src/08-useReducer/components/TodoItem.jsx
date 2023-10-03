@@ -9,6 +9,7 @@ export const TodoItem = ({ todo, onDeleteTodo, onToogleTodo }) => {
         className={`align-self-center text-white ${
           todo.done ? "text-decoration-line-through" : ""
         }`}
+        aria-label="span"
         style={{ cursor: "pointer" }}
         onClick={() => onToogleTodo(todo.id)}
       >
